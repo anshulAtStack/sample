@@ -73,10 +73,36 @@ nav img{
 	padding-right: 10px;
 	
 }
+.powInsights{
+	background-color: #fafafa;
+	height:80%;
+}
+.radarContent{
+	float right;
+	margin-top: 40px;
+	margin-left: 80px;
+	display: block;
+
+}
+.radarContent p{
+	text-align: justify;
+}
+ 
+.radarDiv{
+	margin-left:130px;
+	margin-top: 30px;
+	background-color: red;
+}
 .main p{
 	margin-top: -10px;
 }
 
+.subContentRadar{
+	font-size: 16px;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+	padding-bottom: 30px;
+}
   
  .herounit{
  	width: 100%;
