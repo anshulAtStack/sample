@@ -4,13 +4,13 @@ body{
 .container{
 	background: #fafafa;
 	border-bottom:  1px solid #bfbfbf;
+  
+}
  
+.wrap{
 
+	border: 1px solid #e0e0e0;
 }
-.container_12{
-	width: 150%;
-}
-
 .subtitlebar{
 	background-color: #e1e1e1;
 
@@ -21,34 +21,93 @@ body{
 	padding-left: 50px;
 }
 
-.container_12{
-	width:100%;
-}
+ 
 .searchSection{
 	 
 	 display: inline;
-	float: right;
-	margin-top: 2.3%
-	 
-	 
-
-	 
+ 	 vertical-align: middle;
 
 }
 
 .mainContent{
 margin:0px;
 }
-nav img{
+.searchSection img{
 	width:20px;
 	height:20px;
+
 }
 .subtitlebar p{
 	margin: 20px;
 }
+.up_1{
+	padding-top: 1%;
+}
+.down_1{
+	padding-bottom:1%;
+}
+.up_2{
+	padding-top: 2%;
+}
+.down_2{
+	padding-bottom: 2%;
+}
+.up_3{
+	padding-top: 3%;
+}
+.down_3{
+	padding-bottom:3;
+}
+
+.up_10{
+	padding-top: 10px;
+}
+.down_10{
+	padding-bottom: 10px;
+}
+.up_40{
+	padding-top: 40px;
+}
+.down_40{
+	padding-bottom: 40px;
+}
+.up_100{
+	padding-top: 100px;
+}
+.down_100{
+	padding-bottom: 100px;
+}
+.right_10{
+	padding-right:10px;
+}
+.left_10{
+	padding-left: 10px;
+}
+.right_20{
+	padding-right:20px;
+}
+.left_20{
+	padding-left: 20px;
+}
+.right_30{
+	padding-right:30px;
+}
+.left_30{
+	padding-left: 30px;
+}
+.right_40{
+	padding-right:40px;
+}
+.left_40{
+	padding-left: 40px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0%;
+}
 .main{
 	
-	margin:0;
+ 
 	height: auto;
 	width:100%;
 }
@@ -60,22 +119,19 @@ nav img{
 
 }
 .grid_4{
-	margin:0px;
+	margin:0
+	margin-top: 10px;
+	display: table-cell;	
 }
 
 
 .section1, .section2, .section3{
 	text-align: left;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left: 4%;
-	margin-right: 4%;
-	padding-right: 10px;
+	
 	
 }
-a{
 
-}
+
 .powInsights{
 	background-color: #fafafa;
 	
@@ -87,8 +143,7 @@ a{
 
 .radarContent{
 	
-	margin-top: 40px;
-	margin-left: 150px;
+	 
 	display: block;
 	padding-bottom: 50px;
 	
@@ -100,54 +155,53 @@ a{
 }
  
 .radarDiv{
-	margin-left:100px;
+	 
 	float:left;
-	margin-top: 50px;
-	
+	 
 }
-.main p{
-	margin-top: -10px;
-}
+ 
 
 .statsContent{
-	margin-left: 100px;
+	 
 	padding:20px;
-	margin-top:40px;
+	 
 }
 .statsContent h4{
-	margin-top: 20px;
+	 
 	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
 }
 .statsContent p{
-	margin-top:-40px;
+	 
 	text-align: center;
 }
-
+ 
 .subContentRadar{
 	font-size: 16px;
 	font-weight: lighter;
 	letter-spacing: 0.5px;
-	padding-bottom: 30px;
+	 
 }
   
  .herounit{
  	width: 100%;
  	
- 	 border: none;
+ 	 border-top:1px solid #e1e1e1;
  }
 
  .heroheader h2{
- 	padding-top: 10px;
- 	padding-bottom: 10px;
+ 	 
  	 text-align: center;
  	font-weight: bolder;
  	 text-transform: uppercase;
 
  }
+ .heroheader{
+ 	border:none;
+ }
  .heroheader p{
- 	margin-top: -10px;
+ 	
  	text-align: center;
  	font-size: 16px;
  	font:normal;
@@ -159,14 +213,12 @@ a{
  	font-size: 16px;
  	font:normal;
  	text-align: justify;
- 	margin-left: -5px;
- 	margin-top: -10px;
-
+ 	
  }
 
  .heroimage img{
  	display: block;
- 	margin: auto;
+ 	
  	width: 740px;
  	height:481px;
  	/*box-shadow: 3px 3px 3px #888888;*/
@@ -174,69 +226,58 @@ a{
 
  	 
  }
- .heroheader hr{
- 	padding-bottom: 20px;
- 	width: 20%;
-	height: 2px;
-
- 	margin:auto;
- 	 
- }
- .heroSection{
- 	margin-left:20px;
-	
- }
+  
+ 
+ 
  .heroSection h2{
 	font-family:sans-serif;
  	font-size: 36px;
  	color: orange;
  	font-weight: lighter;
- 	padding:20px;
+ 	 
  }
  .steps{
  	float:left;
 
  }
+
  .stepContent{
  
  	float:center;
 
  }
- .stepContent h4{
- 	margin-top: 10px;
- 	margin-bottom:4px;
- }
+ 
  .container_12{
  	width:100%;
- 	margin:0px;
+ 	
  }
  .navbar{
  	
  	float: left;
  	height: auto;
- 	margin-top: 0.5%;
- 	margin-bottom: 0;
- 	margin-left: 2%;
+ 	 
  	 
  }
 .heroContent{
 	 
 	width:100%;
-	margin:auto;
+	 
 
 
 
 }
-.heroSection{
-	margin-left:90px;
-	margin-top: 20px;
-}
+ 
 .heroSection h1{
-	margin: auto;
+	 
+}
+.heroSection p{
+	text-align: left;
+	display: block;
+
 }
 
  section h4{
- 	padding-top: 20px;
+ 
   	letter-spacing: 0.5px;
  	font-size: 16px;
  	font-weight: bold;	
@@ -245,28 +286,19 @@ a{
  	
 
  }
+ 
 
-
-.titleDiv{
-	
-	height: inherit;
-	margin-left: 32px;
-    text-align: center;
-	float: left;
-	margin-top: 0;
-	
-	/*border-right: 1px solid #bfbfbf;*/
-
-
+.container_24{
+	width:100%;
 }
 .titleDiv h1{
-	padding: 20px;
-	color: #234;
-	margin: auto;
-	text-align: left;	
-
 	
-
+	color: #234;
+	 
+ 
+}
+header{
+	margin:0;
 }
 
 .radarContent a{
@@ -275,8 +307,7 @@ a{
 }
 nav li{
 	display: inline-block;
-	float: left;
-	padding-top: 22px;
+	 
 
 	font-size: 14px;
 	font-weight: bold;
@@ -308,8 +339,7 @@ nav li a:hover{
  .statsChart img{
  	width:300px;
  	height:200px;
- 	margin-top:30px;
- 	margin-left:60px;
+ 	 
 	box-shadow: 2px -2px 2px rgba(34,34,34,0.6);
 	margin-bottom: 30px;
 
@@ -329,8 +359,7 @@ nav li a:hover{
 
 	width:90px;
 	height:40px;
-	padding:10px;
-	margin: 20px;
+	 
 	background-color: #449d44;
 	border-color: #398439;
 	color: white;
@@ -339,16 +368,12 @@ nav li a:hover{
 
 .subscribeEmail{
 
-	margin-left:20px;
+	 
 	width:400px;
 	height:40px;
 }
-.footSection:first-child{
-	margin-left: 100px;
-}
-.footSection p{
-	margin-top:-20px;
-}
+ 
+ 
 .footSection img{
 	width:50px;
 	height:50px;
@@ -369,10 +394,8 @@ nav li a:hover{
 
 }
 .stories section{
-	margin:20px;
+	 
 	padding:20px;
 
 }
-.stories section:nth-child(3n+1){
-	margin-left:80px;
-}
+ 
