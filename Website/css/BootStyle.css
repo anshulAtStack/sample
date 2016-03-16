@@ -2,6 +2,7 @@
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
  
  body{
+ 	font-family: 'Noto Sans',sans-serif;
  	-webkit-font-smoothing:antialiased;
  	text-rendering: optimizeLegibility;
  }
@@ -10,15 +11,59 @@
  		visibility: hidden;
  	}
  }
+
 */
-.navbar-brand{
+.alpha{
+	margin-left:0px;
+}
+.omega{
+	margin:right:0px;
+}
+iframe{
+	 width:350px;
+	 height:250px;
+
+}
+
+
+.navbar-brand {
 	padding:13px 15px;
+	 
+}
+.navbar-brand strong{
+	color:white;
 }
  
+.thumbnails:first-child{
+	padding-left: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.thumbnails img{
+	padding:5px;
+	 
+}
+.thumbnail{
+	position:relative;
+}
+.thumbnail h3{
+	font-size: 16px;
+	margin:5px 0 10;
+	line-height: 20px;
+}
+.thumbnail .medal{
+	font-size: 22px;
+	position: absolute;
+	top:-10px;
+	right:-10px;
+	padding:10px;
+}
+
 #myCarousel img{
 	width:100%;
 }
- 
+
+
 .row{
 	margin-left:0;
 	margin-right: 0;
@@ -29,5 +74,124 @@
 	margin-bottom:5px;
 }
 
-   
+
+#newReleases{
+	background-color: black;
+}
+
+#moreSection {
+	float: right;
+
+}
+
+ @media only handheld and (max-width:768px) {
+ 	.feature img{
+		width: 250px;
+		height: 200px;
+		margin:0 0 20px ;
+ 	}
+ }
+
+@media (min-width:768px) {
+ 	.feature img{
+		width: 400px;
+		height: 450px;
+		margin:0 0 20px ;
+ 	}
+ }
+
+#marathon{
+	background-color: #fafafa;
+}
+#marathon h3,#marathon h5, #marathon p{
+	text-align: center;
+
+}
+
+.newsTitle{
+	color:orange;
+
+}
+.newsTitle h1,h2,h3,h4,h5,p{
+	text-align: left;	
+}
+
+.list-group-item-heading{
+	margin-left:auto;
+}
+.list-group-item a{
+	text-decoration: none;
+	color:#747474;
+
+}
+.list-group-item a:hover{
+	text-decoration: underline;
+}
+.list-group-item-text{
+	text-align: justify;
+
+}
+
+.tabbable img.thumbnail{
+	margin:auto
+}
+#myModal strong{
+	color:white;
+	font-weight: lighter;
+}
+.list-group-item{
+	padding: 10px;
+	
+}
+.list-group-item img{
+	width:100px;
+	height:140px;
+	margin-left: auto;
+	margin-right:10px;
+	 
+	margin-bottom: 10px;
+	border:none;
+}
+.list-group-item p{
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+}
  
+ 
+#trendingActors .caption a{
+	text-decoration: none;
+	color:black;
+}
+#trendingActors .caption a:hover{
+	color:orange;
+}
+#trendingActors .thumbnail a:{
+	text-decoration: none;
+	 
+}
+
+#trendingActors h3{
+	margin-left: 10px;
+}
+
+.thumbnails h3,.thumbnails h4,.thumbnails h5, .thumbnails p{
+	text-align: center;
+}
+
+footer{
+	background-color: #333;
+	color:white:;
+	color:#eee;
+	font-size: 11px;
+	padding:20px;
+}
+@media (max-width: 480px){
+	.thumbnail .medal{
+		font-size:14px;
+	}
+}
+footer ul{
+	list-style: none;
+	padding:0px;
+}
