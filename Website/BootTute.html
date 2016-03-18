@@ -10,488 +10,531 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 </head>
 <body>
 
-		<!--navbar-->
-		<div class="row" id="navbarSection">
-			<nav class="navbar navbar-inverse">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-						</button>
-						<a class="navbar-brand" href="#"><strong>New Releases</strong></a>
-					</div>
+	<!--navbar-->
+	<div class="row" id="navbarSection">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="#"><strong>New Releases</strong></a>
+				</div>
 
-					<!--navbar left-->
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Coming Up
-									<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Movies</a></li>
-									<li><a href="#">TV Series</a></li>
-
-								</ul>
-
-							</li>
-							<li><a href="#">Top Charts</a></li>
-							<li><a href="#">About</a></li>
-						</ul>
-
-						<!--navbar right-->
-						<div class="col-md-3 col-sm-3 pull-right">
-							<form action="#" class="navbar-form">
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Search" name="q">
-										<div class="input-group-btn">
-											<button class="btn btn-default" type="submit">
-												<i class="glyphicon glyphicon-search"></i>
-											</button>
-										</div>
-								</div>
-							</form>
-						</div>
-						<ul class="nav navbar-nav pull-right">
-
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
-									<span class="glyphicon glyphicon-user"><strong class="caret"></strong></span></a>	
-									<ul class="dropdown-menu">
-										<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>
-										 Settings</a></li>
-										<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> 
-										 Update Profile</a></li>
-
-									</ul>
-								</li>
-								<li><a href="#myModal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span></a></li>
-								<div class="modal fade" id="myModal">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button class="close" data-dismiss="modal">&times;</button>	<h4 class="modal-title">Sign In</h4>					 
-											</div>
-											<div class="modal-body">
-												<form action="" class="form-horizontal">
-													<div class="form-group">
-														<label for="inputEmail" class="col-lg-2 control-label" type="text">Email</label>
-														<div class="col-lg-9">
-															<input type="text" class="form-control" id="inputEmail">
-
-														</div>
-													</div>
-													<div class="form-group">
-														<label for="inputPassword" class="col-lg-2 control-label" type="text">Password</label>
-														<div class="col-lg-9">
-															<input type="password" class="form-control" id="inputPassword">
-
-														</div>
-													</div>
-													<div class="form-group">
-														 
-														<div class="col-lg-11">
-															<button type="submit" class="btn btn-success pull-right">
-																Sign In
-															</button>
-
-														</div>
-													</div>
-													 
-
-												</form>
-											</div>
-													
-												
-											 <div class="modal-footer">
-											 	
-											 	<button class="col-lg-12 btn btn-primary pull-right">Sign Up
-											 			
-											 	</button>
-											 	
-											 </div>
-										</div>
-									</div>
-								</div>
-								
-
+				<!--navbar left-->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Coming Up
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Movies</a></li>
+								<li><a href="#">TV Series</a></li>
 
 							</ul>
-						</div>
+
+						</li>
+						<li><a href="#">Top Charts</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+
+					<!--navbar right-->
+					<div class="col-md-3 col-sm-3 pull-right">
+						<form action="#" class="navbar-form">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search" name="q">
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+								</div>
+							</div>
+						</form>
 					</div>
-				</nav>
-			</div>
-		
-		<!--navbar ends-->
- 
- 		<!--Carousel Begins-->
-	<div class="container-fluid" id="newReleases" >
- 
-		
-		<div class="row">
-		<div class="col-12">
+					<ul class="nav navbar-nav pull-right">
 
-				
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators hidden-sm">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+								<span class="glyphicon glyphicon-user"><strong class="caret"></strong></span></a>	
+								<ul class="dropdown-menu">
+									<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>
+										Settings</a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> 
+											Update Profile</a></li>
 
-					</ol>
+										</ul>
+									</li>
+									<li><a href="#myModal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span></a></li>
+									<div class="modal fade" id="myModal">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button class="close" data-dismiss="modal">&times;</button>	<h4 class="modal-title">Sign In</h4>					 
+												</div>
+												<div class="modal-body">
+													<form action="" class="form-horizontal">
+														<div class="form-group">
+															<label for="inputEmail" class="col-lg-2 control-label" type="text">Email</label>
+															<div class="col-lg-9">
+																<input type="text" class="form-control" id="inputEmail">
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<a href="#"><img src="img/django.jpg" alt="Django Unchained"></a>
+															</div>
+														</div>
+														<div class="form-group">
+															<label for="inputPassword" class="col-lg-2 control-label" type="text">Password</label>
+															<div class="col-lg-9">
+																<input type="password" class="form-control" id="inputPassword">
 
+															</div>
+														</div>
+														<div class="form-group">
+
+															<div class="col-lg-11">
+																<button type="submit" class="btn btn-success pull-right">
+																	Sign In
+																</button>
+
+															</div>
+														</div>
+
+
+													</form>
+												</div>
+
+
+												<div class="modal-footer">
+
+													<button class="col-lg-12 btn btn-primary pull-right">Sign Up
+
+													</button>
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+								</ul>
+							</div>
 						</div>
+					</nav>
+				</div>
 
-						<div class="item">
-							<a href="#"> <img src="img/gravity.jpg" alt="Gravity"></a>
+				<!--navbar ends-->
 
+				<!--Carousel Begins-->
+				<div class="container-fluid" id="newReleases" >
+
+
+					<div class="row">
+						<div class="col-12">
+
+
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators hidden-sm">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel" data-slide-to="1"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<a href="#"><img src="img/django.jpg" alt="Django Unchained"></a>
+
+									</div>
+
+									<div class="item">
+										<a href="#"> <img src="img/gravity.jpg" alt="Gravity"></a>
+
+									</div>
+
+									<div class="item">
+										<a href="#"> <img src="img/forrestgump.jpg" alt="Forrest Gump"></a>
+
+									</div>
+
+
+
+									<!-- Left and right controls -->
+									<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
 						</div>
-
-						<div class="item">
-							<a href="#"> <img src="img/forrestgump.jpg" alt="Forrest Gump"></a>
-
-						</div>
-
-
-
-						<!-- Left and right controls -->
-						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
 					</div>
 				</div>
- 			</div>
-		</div>
+				<!--Carousel Ends-->
+
+
+				<!--Big Callout-->
+<!-- <div class="row" id="callout">
+<div class="col-12">
+<div class="well">
+<div class="page-header">
+<h1>
+<small>A Subheader</small>
+</h1>
+</div>
+</div>
+</div>
+
+</div> -->
+<!--Big Callout ends-->
+
+<!--Marthon Movies Section-->
+<div class="container" >
+	<div class="row">
+		<h2>March Marathon</h2> 
+
+
 	</div>
-		<!--Carousel Ends-->
+	<div class="row" id="marathon" >
 
+		<div id="feature" class="col-sm-4 col-md-4 feature">
+			<div class="panel">
 
-		<!--Big Callout-->
-		<!-- <div class="row" id="callout">
-			<div class="col-12">
-				<div class="well">
-					<div class="page-header">
-						<h1>
-							<small>A Subheader</small>
-						</h1>
-					</div>
+				<img src="img/batmanVsSupermanThumb.jpg" alt="Batman vs Superman" class="img-thumbnail img-responsive">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><a href="">Batman Vs Superman</a></strong></h3>
+					<h5> 25 March 2016 </h5>
+
 				</div>
+				<a href="https://www.youtube.com/watch?v=fis-9Zqu2Ro" class="btn btn-info btn-block featureBtn">
+					Watch Trailer
+				</a>
+				
 			</div>
-			
-		</div> -->
-		<!--Big Callout ends-->
-	 
-	<!--Marthon Movies Section-->
-	<div class="container" >
-		<div class="row">
-			<h2>March Marathon</h2> 
-		
-		
 		</div>
-		<div class="row" id="marathon" >
-		  	 
-			<div class="col-sm-4 col-md-4 feature">
-				<div class="panel">
-					 
-					<img src="img/batmanVsSuperman.jpg" alt="Batman vs Superman" class="img-thumbnail img-responsive">
-					<div class="panel-heading">
-						<h3 class="panel-title"><strong><a href="">Batman Vs Superman</a></strong></h3>
-						<h5> 25 March 2016 </h5>
-					</div>
-					<a href="https://www.youtube.com/watch?v=fis-9Zqu2Ro" class="btn btn-info btn-block">
-						Watch Trailer
-					</a>
+
+		<div class="col-sm-4 col-md-4 feature">
+			<div class="panel">
+
+				<img src="img/kapoor_and_sons.jpg" alt="Kapoor And Sons" class="img-thumbnail img-responsive">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><a href="">Kapoor And Sons</a></strong></h3>
+					<h5> 18 March 2016 </h5>
 				</div>
+				<a href="https://www.youtube.com/watch?v=fis-9Zqu2Ro" class="btn btn-info btn-block featureBtn">
+					Watch Trailer
+				</a>
 			</div>
-			
-			<div class="col-sm-4 col-md-4 feature">
-				<div class="panel">
-					 
-					<img src="img/kapoor_and_sons.jpg" alt="Kapoor And Sons" class="img-thumbnail img-responsive">
-					<div class="panel-heading">
-						<h3 class="panel-title"><strong><a href="">Kapoor And Sons</a></strong></h3>
-						<h5> 18 March 2016 </h5>
-					</div>
-					<a href="https://www.youtube.com/watch?v=fis-9Zqu2Ro" class="btn btn-info btn-block">
-						Watch Trailer
-					</a>
-				</div>
-			</div>
+		</div>
 
 
-			<div class="col-sm-4 col-md-4 feature">
-				<div class="panel">
-					 
-					<img src="img/hail_caesar.jpg" alt="Hail Caesar" class="img-thumbnail img-responsive">
-					<div class="panel-heading">
-						<h3 class="panel-title"><strong><a href="">Hail Caesar</a></strong></h3>
-						<h5> 29 March 2016 </h5>
-					</div>
-					<a href="https://www.youtube.com/watch?v=fis-9Zqu2Ro" class="btn btn-info btn-block">
-						Watch Trailer
-					</a>
-				</div>
-			</div>
+		<div class="col-sm-4 col-md-4 feature">
+			<div class="panel">
 
-			<div id="moreSection">
+				<img src="img/hail_caesar.jpg" alt="Hail Caesar" class="img-thumbnail img-responsive">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><a href="">Hail Caesar</a></strong></h3>
+					<h5> 29 March 2016 </h5>
+				</div>
+				<a href="https://www.youtube.com/watch?v=fis-9Zqu2Ro" class="btn btn-info btn-block featureBtn">
+					Watch Trailer
+				</a>
+			</div>
+		</div>
+
+		<div id="moreSection">
 			<a href="" class="btn btn-default btn-link">More</a>
 		</div>
 
-		
-		</div>
-	
+
+	</div>
+
 	<!--Marthon Movies Section ends-->
 	<hr/>
 	<!--News Section Begins-->
-		<div class="row" id="newsSection">
-			<div class="col-sm-6">
-				<h3>Top News</h3>
-				<div class="tabbable">
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#tab1" data-toggle="tab">Top News</a></li>
-						<li><a href="#tab2" data-toggle="tab">Hollywood</a></li>
-						<li><a href="#tab3" data-toggle="tab">Bollywood</a></li>
-					</ul>
-					
-				</div>
-				<div class="tab-content">
+	<div class="row" id="newsSection">
+		<div class="col-sm-6">
+			<h3>Top News</h3>
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">Top News</a></li>
+					<li><a href="#tab2" data-toggle="tab">Hollywood</a></li>
+					<li><a href="#tab3" data-toggle="tab">Bollywood</a></li>
+				</ul>
 
-					<div class="tab-pane active" id="tab1">	
-						<ul class="list-group clearfix">
+			</div>
+			<div class="tab-content">
 
-							<li class="list-group-item clearfix">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">Kapoor and Sons: Official trailer launched.</h4>
-									
-								</a>
-								<img src="img/kasThumb.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-								<p class="list-group-item-text">
-										Kapoor and sons is a story revolving around a dysfunctional family of two brothers who visit their parents and grandfather in Coonoor, and end up falling for the same woman.
-								 </p>
-								 
-							</li>
+				<div class="tab-pane active" id="tab1">	
+					<ul class="list-group clearfix">
 
-							<li class="list-group-item clearfix">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">
+						<li class="list-group-item clearfix">
+							<a href="">
+								<h4 class="list-group-item-heading newsTitle">Kapoor and Sons: Official trailer launched.</h4>
+
+							</a>
+							<img src="img/kasThumb.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
+							<p class="list-group-item-text">
+								Kapoor and sons is a story revolving around a dysfunctional family of two brothers who visit their parents and grandfather in Coonoor, and end up falling for the same woman.
+							</p>
+
+						</li>
+
+						<li class="list-group-item clearfix">
+							<a href="">
+								<h4 class="list-group-item-heading newsTitle">
 									Ford and Spielberg Return for 'Indiana Jones 5' in 2019.</h4>
 									<img src="img/indianajones.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-									
-								</a>
-								<p class="list-group-item-text">
-										Walt Disney Pictures has announced Harrison Ford will return to the big screen as Indiana Jones for a fifth Indiana Jones adventure, set for a July 19, 2019 release.
-								 </p>
-								 
-							</li>
 
-							<li class="list-group-item clearfix	">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">'Better Call Saul'
-									Renewed for Third Season</h4>
-									<img src="img/bettercallsaul.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-									
 								</a>
 								<p class="list-group-item-text">
+									Walt Disney Pictures has announced Harrison Ford will return to the big screen as Indiana Jones for a fifth Indiana Jones adventure, set for a July 19, 2019 release.
+								</p>
+
+						</li>
+
+						<li class="list-group-item clearfix">
+							<a href="">
+								<h4 class="list-group-item-heading newsTitle">'Better Call Saul'
+										Renewed for Third Season</h4>
+										<img src="img/bettercallsaul.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
+
+									</a>
+									<p class="list-group-item-text">
 										AMC has picked up its hit Breaking Bad spinoff, Better Call Saul, for a 10-episode third season, Variety reports.
 										The show is halfway through its second season and continues to score big ratings. It also racked up seven Emmy nominations last year, including Outstanding Drama Series, Outstanding Lead Actor in a Drama for Bob Odenkirk, and Supporting Actor in a Drama for Jonathan Banks.
-								 </p>
-								 
-							</li>
-							 
-						</ul>
-					</div>
-					
-					<div class="tab-pane" id="tab2">	
-						<ul class="list-group">
+									</p>
 
-							<li class="list-group-item">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">Review: The gloves don't fit on 'The People v. O.J. Simpson'</h4>
-									
-								</a>
-								<img src="img/oj.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-								<p class="list-group-item-text clearfix">
-										A review of tonight's The People v. O.J. Simpson: American Crime Story coming up just as soon as we never talk about your hair again... "They want it to be entertainment." -Alan Dershowitz Christopher Darden's insistence on having O.J. Simpson try on the gloves is one of the great legal blunders of our time, and a big turning point in the trial. So it makes sense that "Conspiracy Theories" would devote most of its running time to building up to that moment, as Cochran's defense team spins one conspiracy theory after another to amuse the court, while the jurors seem barely awake for the various pieces of hard, seemingly daming evidence that Darden and Clark keep presenting to them.
-										"Conspiracy Theories" would devote most of its running time to building up to that moment, as Cochran's defense team spins one conspiracy theory after another to amuse the court, while the jurors seem barely awake for the various pieces of hard, seemingly daming evidence that Darden and Clark keep presenting to them.
-								 </p>
-								 
-							</li>
+						</li>
 
-							<li class="list-group-item">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">
+					</ul>
+				</div>
+
+				<div class="tab-pane" id="tab2">	
+					<ul class="list-group">
+
+						<li class="list-group-item">
+							<a href="">
+								<h4 class="list-group-item-heading newsTitle">Review: The gloves don't fit on 'The People v. O.J. Simpson'</h4>
+							</a>
+							<img src="img/oj.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
+							<p class="list-group-item-text clearfix">
+							A review of tonight's The People v. O.J. Simpson: American Crime Story coming up just as soon as we never talk about your hair again... "They want it to be entertainment." -Alan Dershowitz Christopher Darden's insistence on having O.J. Simpson try on the gloves is one of the great legal blunders of our time, and a big turning point in the trial. So it makes sense that "Conspiracy Theories" would devote most of its running time to building up to that moment, as Cochran's defense team spins one conspiracy theory after another to amuse the court, while the jurors seem barely awake for the various pieces of hard, seemingly daming evidence that Darden and Clark keep presenting to them.
+							"Conspiracy Theories" would devote most of its running time to building up to that moment, as Cochran's defense team spins one conspiracy theory after another to amuse the court, while the jurors seem barely awake for the various pieces of hard, seemingly daming evidence that Darden and Clark keep presenting to them.
+							</p>
+						</li>
+
+						<li class="list-group-item">
+							<a href="">
+								<h4 class="list-group-item-heading newsTitle">
 									‘The Big Short’ Screenwriter Developing Drama Series with Amazon.</h4>
-									
-								</a>
-								<img src="img/bigShort.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-								<p class="list-group-item-text">
-										Coming off of an Oscar win for “The Big Short,” screenwriter Charles Randolph has signed a drama development deal with Amazon Studios and is working on a series with the streaming service, Variety has learned.
+							</a>
+							<img src="img/bigShort.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
+							<p class="list-group-item-text">
+							Coming off of an Oscar win for “The Big Short,” screenwriter Charles Randolph has signed a drama development deal with Amazon Studios and is working on a series with the streaming service, Variety has learned.
 
-										Randolph will develop an hourlong project, which is described as a multifaceted realistic look at what it would take to create a present day civil war in the United States of America. Aside from Randolph, no other creatives nor cast has been attached to the project.
-								 </p>
-								 
-							</li>
+							Randolph will develop an hourlong project, which is described as a multifaceted realistic look at what it would take to create a present day civil war in the United States of America. Aside from Randolph, no other creatives nor cast has been attached to the project.
+							</p>
+						</li>
 
-							<li class="list-group-item">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">'Better Call Saul'
-									Renewed for Third Season</h4>
-									
-								</a>
-								<img src="img/bettercallsaul.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-								<p class="list-group-item-text">
-										AMC has picked up its hit Breaking Bad spinoff, Better Call Saul, for a 10-episode third season, Variety reports.
-										The show is halfway through its second season and continues to score big ratings. It also racked up seven Emmy nominations last year, including Outstanding Drama Series, Outstanding Lead Actor in a Drama for Bob Odenkirk, and Supporting Actor in a Drama for Jonathan Banks.
-								 </p>
-								 
-							</li>
-							 
-						</ul>
-					</div>
-					
-					<div class="tab-pane" id="tab3">	
+						<li class="list-group-item">
+							<a href="">
+							<h4 class="list-group-item-heading newsTitle">'Better Call Saul'
+								Renewed for Third Season</h4>
+							</a>
+							<img src="img/bettercallsaul.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
+							<p class="list-group-item-text">
+							AMC has picked up its hit Breaking Bad spinoff, Better Call Saul, for a 10-episode third season, Variety reports.
+												The show is halfway through its second season and continues to score big ratings. It also racked up seven Emmy nominations last year, including Outstanding Drama Series, Outstanding Lead Actor in a Drama for Bob Odenkirk, and Supporting Actor in a Drama for Jonathan Banks.
+											</p>
+
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="tab-pane" id="tab3">	
 						<ul class="list-group">
-
-							<li class="list-group-item">
-								<a href="">
-									<h4 class="list-group-item-heading newsTitle">MS Dhoni teaser: Sushant shows us a Dhoni we've never seen</h4></a>
-									<img src="img/dhoni.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
-									
-								
-								<p class="list-group-item-text clearfix">
-										Mahender Singh Dhoni only brought out the helicopter shot when India most needed it -- and so it isn't what you're going to see in the highly intriguing teaser for Neeraj Pandey's MS Dhoni.
-
-										Instead, what we do see, is Sushant Singh Rajput working as a ticket collector on the South Eastern railway.
-
-										He's given his starting orders and the man sincerely steps to it, making his way amid a sea of people on a crowded station.
-								 </p>
-								 
-							</li>
-
-							 
-						 
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	<!--News Section Ends-->
-	<hr/>
-	<!--Trending Actors -->
-	<div id="trendingActors" class="row">
-		<div class="col-12">
-			<h3>Oscar Winners: 88<sup>th</sup> Annual Academy Awards</h3>
-			<div class="thumbnails row">
+										<li class="list-group-item">
+											<a href="">
+												<h4 class="list-group-item-heading newsTitle">MS Dhoni teaser: Sushant shows us a Dhoni we've never seen</h4></a>
+												<img src="img/dhoni.jpg" class="col-md-4 hidden-xs hidden-sm thumbnail">
 
 
-				<div class="col-md-4 col-xs-12 col-lg-4 col-sd-4 pull-left">
-					<div class="thumbnail">
-						<img src="img/leoOscar.jpg" alt="Leonardo Dicaprio">
-						<div class="label label-warning medal">
-							<span class="glyphicon glyphicon-star"></span>
-						</div>
-						<div class="caption">
-							<a href=""><h4>Leonardo Dicaprio</h4></a>
-							<p>Leonardo Dicaprio won the Best Actor award for his role in The Revenant.</p>
-						</div>
-						 <a href=""><h5>Read More</h5></a>
-					</div>
+												<p class="list-group-item-text clearfix">
+													Mahender Singh Dhoni only brought out the helicopter shot when India most needed it -- and so it isn't what you're going to see in the highly intriguing teaser for Neeraj Pandey's MS Dhoni.
+
+													Instead, what we do see, is Sushant Singh Rajput working as a ticket collector on the South Eastern railway.
+
+													He's given his starting orders and the man sincerely steps to it, making his way amid a sea of people on a crowded station.
+												</p>
+
+											</li>
+
+
+
+										</ul>
 				</div>
 
+		</div>
+								<div class="col-6 clearfix">
+									<div id="moreSection">
+										<a href="" class="btn btn-default btn-link">More</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6" id="spotlightSection">
+
+								<div class="col-sm-12">
+									<h3>Movie of The Month</h3>
+
+									<div class="col-12">
+										<div class="thumbnail">
+											<img src="img/spotlight.jpg" class="img-responsive" alt="Spotlight"/>
+											<div class="label label-danger play">
+												<a href="#videoModal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-play-circle"></span></a>
+											</div>
+
+										</div>
+									<div class="modal fade" id="videoModal">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													
+													<button class="close" data-dismiss="modal">&times;</button>		
+													<h4 class="modal-title">Spotlight Movie 2015</h4>
+												</div>
+												<div class="modal-body">
+													<iframe id="movieTrailer" src="https://www.youtube.com/embed/EwdCIpbTN5g"  frameborder="0" allowfullscreen></iframe>
+												</div>
+												<div class="modal-footer">
+													 
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+									<p>The true story of how the Boston Globe uncovered the massive scandal of child molestation and cover-up within the local Catholic Archdiocese, shaking the entire Catholic Church to its core.</p>
+									<p class="lead"> Awarded Best Motion Picture in the 88<sup>th</sup> Academy Awards.</p>
+									<h5>Director: <a href="#"> Tom McCarthy </a></h5>
+									<h5>Writers: <a href="#"> Josh Singer </a> <a href="#">Tom McCarthy</a></h5>
+									<h5>Stars: <a href=""> Mark Ruffalo </a><a href=""> Michael Keaton </a><a href=""> Rachel McAdams </a></h5>
+
+								</div>
+
+							</div>
+						</div>
+						<!--News Section Ends-->
+						<hr/>
+						<!--Trending Actors -->
+						<div id="trendingActors" class="row">
+							<div class="col-12">
+								<h3>Oscar Winners: 88<sup>th</sup> Annual Academy Awards</h3>
+								<div class="thumbnails row">
 
 
-				<div class="col-md-4 col-xs-12 col-lg-4 col-sd-4">
-					<div class="thumbnail">
-						<img src="img/BrieLarson.jpg" alt="Leonardo Dicaprio">
-						<div class="label label-warning medal">
-							<span class="glyphicon glyphicon-star"></span>
+									<div class="col-md-4 col-xs-12 col-lg-4 col-sd-4 pull-left">
+										<div class="thumbnail">
+											<img src="img/leoOscar.jpg" alt="Leonardo Dicaprio">
+											<div class="label label-warning medal">
+												<span class="glyphicon glyphicon-star"></span>
+											</div>
+											<div class="caption">
+												<a href=""><h4>Leonardo Dicaprio</h4></a>
+												<p>Leonardo Dicaprio won the Best Actor award for his role in The Revenant.</p>
+											</div>
+											<a href=""><h5>Read More</h5></a>
+										</div>
+									</div>
+
+
+
+									<div class="col-md-4 col-xs-12 col-lg-4 col-sd-4">
+										<div class="thumbnail">
+											<img src="img/BrieLarson.jpg" alt="Leonardo Dicaprio">
+											<div class="label label-warning medal">
+												<span class="glyphicon glyphicon-star"></span>
+											</div>
+											<div class="caption">
+												<a href=""><h4>Brie Larson</h4></a>
+												<p>Brie Larson won the Best Actress award for her outstanding role in Room.</p>
+											</div>
+											<a href=""><h5>Read More</h5></a>
+										</div>
+									</div>
+
+									<div class="col-md-4 col-xs-12 col-lg-4 col-sd-4">
+										<div class="thumbnail">
+											<img src="img/aliciaVikander.jpg" alt="Leonardo Dicaprio">
+											<div class="label label-warning medal">
+												<span class="glyphicon glyphicon-star"></span>
+											</div>
+											<div class="caption">
+												<a href=""><h4>Alicia Vikander</h4></a>
+												<p>Alicia Vikander won the Best Supporting Actress award for her role in The Danish Girl.</p>
+											</div>
+											<a href=""><h5>Read More</h5></a>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+
 						</div>
-						<div class="caption">
-							<a href=""><h4>Brie Larson</h4></a>
-							<p>Brie Larson won the Best Actress award for her outstanding role in Room.</p>
-						</div>
-						 <a href=""><h5>Read More</h5></a>
+						<!--Trending Actors ends -->
+
 					</div>
-				</div>
 
-				<div class="col-md-4 col-xs-12 col-lg-4 col-sd-4">
-					<div class="thumbnail">
-						<img src="img/aliciaVikander.jpg" alt="Leonardo Dicaprio">
-						<div class="label label-warning medal">
-							<span class="glyphicon glyphicon-star"></span>
+					<!--Footer Section -->
+					<footer>
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-3">
+									<h6>Copyrights &copy; 2016 New Releases </h6>
+								</div>
+								<div class="col-sm-3">
+									<h6>About Us</h6>
+								</div>
+								<div class="col-sm-2">
+									<h6>Navigation</h6>
+									<ul class="unstyled">
+										<li><a href="">Home</a></li>
+										<li><a href="">Coming Up</a></li>
+										<li><a href="">Abot Us</a></li>
+										<li><a href="">Contact</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-2">
+									<h6>Follow Us</h6>
+									<ul class="unstyled">
+										<li><a href="">Facebook</a></li>
+										<li><a href="">Twitter</a></li>
+										<li><a href="">Google Plus</a></li>
+
+									</ul>
+								</div>	
+								<div class="col-sm-2">
+									<h6>Coded by Anshul Chanchlani</h6>
+								</div>
+							</div>
 						</div>
-						<div class="caption">
-							<a href=""><h4>Alicia Vikander</h4></a>
-							<p>Alicia Vikander won the Best Supporting Actress award for her role in The Danish Girl.</p>
-						</div>
-						 <a href=""><h5>Read More</h5></a>
-					</div>
-				</div>
+					</footer>
+					<!--Footer Section ends -->
 
-				
-
-			</div>
-		</div>
-		
-	</div>
-	<!--Trending Actors ends -->
-
-</div>
-
-<!--Footer Section -->
-<footer>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-2">
-			<h6>Copyrights &copy; 2016 New Releases </h6>
-		</div>
-		<div class="col-sm-4">
-			<h6>About Us</h6>
-		</div>
-		<div class="col-sm-2">
-			<h6>Navigation</h6>
-			<ul class="unstyled">
-				<li><a href="">Home</a></li>
-				<li><a href="">Coming Up</a></li>
-				<li><a href="">Abot Us</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</div>
-		<div class="col-sm-2">
-			<h6>Follow Us</h6>
-			<ul class="unstyled">
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Twitter</a></li>
-				<li><a href="">Google Plus</a></li>
-			 
-			</ul>
-		</div>	
-		<div class="col-sm-2">
-			<h6>Coded by Anshul Chanchlani</h6>
-		</div>
-	</div>
-</div>
-</footer>
-<!--Footer Section ends -->
-	
-</body>
-</html>
+				</body>
+				</html>
