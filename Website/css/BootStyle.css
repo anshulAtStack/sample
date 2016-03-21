@@ -20,6 +20,9 @@
 	margin:right:0px;
 }
  
+.carousel-caption h3, .carousel-caption p{
+	text-align: center;
+}
 
 #videoModal .close{
 	opacity:1;
@@ -275,8 +278,10 @@ footer{
 	color:white:;
 	color:#eee;
 	font-size: 11px;
-	padding:20px;
+	width:100%;
+		
 }
+
 @media (max-width: 480px){
 	.thumbnail .medal{
 		font-size:14px;
