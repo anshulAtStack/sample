@@ -1,0 +1,16 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "A demo app for assignment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anshul Chanchlani",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^0.5.2",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {}
+}
